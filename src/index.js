@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Detect for >0 in Percent-off bubbles and hide them
-
 function hideZeroPercent() {
   let percentOff = Array.from(document.getElementsByClassName('percent-off-number'));
 
@@ -28,12 +27,12 @@ function hideZeroPercent() {
 
 hideZeroPercent();
 
+//Wistia Video Play on Thumbnail Click
+window._wq = window._wq || [];
+_wq.push({ id: "zwflowymel", onEmbedded: function(video) {
 
-
-
-
-
-
-
-
-
+  video.bind('play', function() {
+    console.log("Video playing")
+    return video.unbind;
+  });
+}});
