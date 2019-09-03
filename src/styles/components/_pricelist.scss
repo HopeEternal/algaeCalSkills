@@ -79,13 +79,14 @@ $screen-xs-max: $screen-xs -1 !default;
   .product-box-wrapper{
     margin:20px auto;
     .dollar-sign{ vertical-align:super; font-size:70%;  }
-
+    
     padding: 3px 8px 8px;
 
     &.most-popular{
       //margin-top: 0; padding: 3px 8px 8px;
       background-color: $algaecal-blue-enhanced;
       box-shadow: -1px 0px 13px 0px rgba(100, 100, 100, 0.75);
+
     }
 
     #bundle-product-name{
@@ -99,6 +100,8 @@ $screen-xs-max: $screen-xs -1 !default;
       margin:4px;
     }
     .most-popular-label{
+      font-size: $font-size-large*1.2;
+      font-weight: 700;
       text-transform:uppercase;
       color: $white;
     }
@@ -138,22 +141,30 @@ $screen-xs-max: $screen-xs -1 !default;
         .amount,.dollar-sign{ font-weight:$font-weight-heavy;}
 
       }
+
+      .you-save{
+        color: red;
+        font-weight: bold;
+        margin: 0px auto 10px;
+        line-height: 1.2em;
+        font-size: 1.5rem;
+      }
     }
 
-    .percent-off{
+    .percent-off {
       background-color:$algaecal-orange;
       color:$white;
       height: 70px;
       width: 70px;
       border-radius:200px;
       position:absolute;
-      top:-20px;
-      right:34px;
+      right:105px;
       box-shadow: -1px 0px 13px 0px rgba(100,100,100,0.75);
 
       .label {
         .amount{ font-size:125%; }
         font-size:18px;
+        font-weight: bolder;
         padding: 20px;
         left:50%;
         transform: translate(-50%, 0);
@@ -161,8 +172,8 @@ $screen-xs-max: $screen-xs -1 !default;
       }
 
       @media screen and (max-width: $screen-sm-max){
-        top: -46px;
-        right: 67px;
+        left:35%;
+        transform:translate(220%);
       }
       @media screen and (max-width: $screen-xs-max){
         top: -60px;
@@ -174,8 +185,8 @@ $screen-xs-max: $screen-xs -1 !default;
 
   .most-popular{
     .percent-off{
-      top:-61px;
-      right:14px;
+        right:115px;
+   
     }
   }
 }
@@ -192,8 +203,9 @@ $screen-xs-max: $screen-xs -1 !default;
       transform:translateX(0);
     }
     .most-popular .percent-off{
-      left:50%;
+      left:35%;
       transform:translate(220%);
+      background-color: green;
     }
   }
 }
@@ -208,6 +220,7 @@ $screen-xs-max: $screen-xs -1 !default;
     .percent-off {
       left: 50%;
       transform: translateX(220%);
+      background-color: purple;
     }
   }
 }
@@ -327,13 +340,11 @@ $header-height: 100px;
 }
 
 .most-popular{
-  font-size: $font-size-large*1.2;
   display: block;
   margin: auto;
   width: 209px;
   line-height: 2;
   color: #666;
-  font-weight: 700;
   background: $algaecal-yellow url('../assets/img/redline.png') no-repeat 48% 82%;
   background-size: 145px 8px;
 }
