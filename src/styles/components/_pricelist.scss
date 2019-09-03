@@ -111,6 +111,7 @@ $screen-xs-max: $screen-xs -1 !default;
       flex-direction:column;
       justify-content: space-between;
       padding: 10px 0;
+      min-height: 580px;
       border-radius:0;
       background-color:white;
       box-shadow: -1px 0px 13px 0px rgba(100,100,100,0.75);
@@ -241,6 +242,7 @@ $screen-xs-max: $screen-xs -1 !default;
 
 .product-box-wrapper{
   max-width: 400px;
+
 }
 
 @media screen and (max-width: $screen-sm) {
