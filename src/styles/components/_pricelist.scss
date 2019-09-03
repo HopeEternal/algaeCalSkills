@@ -142,6 +142,34 @@ $screen-xs-max: $screen-xs -1 !default;
 
       }
 
+      .list-price {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 50%;
+          right: 0;
+          border-top: 1px solid red;
+          -webkit-transform: skewY(-10deg);
+          -moz-transform: skewY(-10deg);
+          transform: skewY(-25deg);
+        }  
+      }
+
+      .todays-price {
+        margin-left: 15px;
+
+        .cost:after {
+          content: "USD";
+          text-decoration: underline; 
+          font-size: 60%;        
+          margin-left: 3px;
+        }
+      }
+
+
       .you-save{
         color: red;
         font-weight: bold;
