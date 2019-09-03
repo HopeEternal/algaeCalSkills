@@ -94,8 +94,8 @@ $screen-xs-max: $screen-xs -1 !default;
       font-weight:$font-weight-heavy;
     }
     .bundle-product-description{
-      font-weight:$font-weight-normal;
-      font-size:26px;
+      font-weight:$font-weight-heavy;
+      font-size:20px;
       color:$algaecal-bluegreen;
       margin:4px;
     }
@@ -116,6 +116,7 @@ $screen-xs-max: $screen-xs -1 !default;
       box-shadow: -1px 0px 13px 0px rgba(100,100,100,0.75);
       color: $black;
       text-align:center;
+      line-height: 1.5rem;
 
       h3{
         color:black;
@@ -186,6 +187,7 @@ $screen-xs-max: $screen-xs -1 !default;
       width: 70px;
       border-radius:200px;
       position:absolute;
+      margin-top: 20px;
       right:105px;
       box-shadow: -1px 0px 13px 0px rgba(100,100,100,0.75);
 
@@ -233,7 +235,6 @@ $screen-xs-max: $screen-xs -1 !default;
     .most-popular .percent-off{
       left:35%;
       transform:translate(220%);
-      background-color: green;
     }
   }
 }
@@ -248,7 +249,6 @@ $screen-xs-max: $screen-xs -1 !default;
     .percent-off {
       left: 50%;
       transform: translateX(220%);
-      background-color: purple;
     }
   }
 }
