@@ -57,7 +57,6 @@ $screen-xs-max: $screen-xs -1 !default;
   }
 }
 
-
 .purchase-options-new-cta{
   margin-top:80px;
 
@@ -248,6 +247,7 @@ $screen-xs-max: $screen-xs -1 !default;
 @media screen and (max-width: $screen-sm) {
   .product-box-wrapper {
     margin: auto !important;
+    
     .percent-off {
       left: 50%;
       transform: translateX(220%);
