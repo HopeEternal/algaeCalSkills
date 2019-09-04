@@ -1,8 +1,10 @@
-# AlgaeCal Web Developer Test
+# AlgaeCal Web Developer Test by Risa
 
-Thank you for taking the time to take our test. We're excited to have you as a 
-candidate and look forward to reviewing your results!
+An exciting Front End Web Developer Skills Test for a team of professionals working to improve the lives of osteoporosis sufferers!
 
+## :trumpet: A thank you and a quick note:
+
+Thanks for taking the time to review my code, it was crafted with joy. Please pardon the copious number of commits. I completed this Skills Test while on Vacation from a London Air-BnB where unfortunately the owner had a kid-safe filter enabled, thus blocking command-line commits. Instead, my work-around was to individually and manually upload my code/files to GitHub via the browser. Completely defeated the purpose, and by the end I yearned for the sweet convenience of Bash, but providing you with a finished product in a timely manner was more important. 
 
 ## Instructions
 1. Clone this repo
