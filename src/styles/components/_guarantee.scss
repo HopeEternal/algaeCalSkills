@@ -3,4 +3,10 @@
     padding-bottom: 10px;
     border-bottom: 1px solid $gray-light;
   }
+
+  //Image in JSON has hard coded dimensions and is not responsive
+  .wp-image-62567 {
+    width: 100%;
+    height: 100%;
+  }
 }
