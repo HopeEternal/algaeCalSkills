@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
   loadSVGs();
 });
 
+//Formatted all JS code at 2-space indentation to match original JS above in contrast with ESLint default of 4
 
 // Detect for >0 in Percent-off bubbles and hide them
 function hideZeroPercent() {
   let percentOff = Array.from(document.getElementsByClassName('percent-off-number'));
 
   percentOff.forEach(checkNum);
-
     function checkNum(item, index) {
       let num = Array.from(item.innerHTML);
 
@@ -24,7 +24,6 @@ function hideZeroPercent() {
       }
   }
 }
-
 hideZeroPercent();
 
 //Wistia Video Play on Thumbnail Click
@@ -36,3 +35,30 @@ _wq.push({ id: "zwflowymel", onEmbedded: function(video) {
     return video.unbind;
   });
 }});
+
+//AJAX API Request for AlgaeCal Gurantee Modal
+const algaeAPIurl = 'https://www.algaecal.com/wp-json/acf/v3/options/options';
+
+function ajax_get(url, callback) {
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          try {
+              var data = JSON.parse(xmlhttp.responseText);
+          } catch(err) {
+              console.log(err.message + " in " + xmlhttp.responseText);
+              return;
+          }
+          callback(data);
+      }
+  };
+
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
+}
+
+ajax_get(algaeAPIurl, function(data) {
+  const acfObj = data.acf;  
+  document.getElementById("guarantee-modal-body").innerHTML = acfObj["7yr_full_copy"];
+
+});
